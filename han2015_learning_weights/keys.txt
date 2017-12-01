@@ -1,0 +1,46 @@
+------------------------
+han2015
+------------------------
+
+Song Han is a fifth year PhD student with Prof. Bill Dally at Stanford University. 
+
+Unlike conventional training, however, we are not
+learning the final values of the weights, but rather we are learning which connections are important.
+
+The second step is to prune the low-weight connections
+
+The final step retrains the network to learn the final weights for the remaining
+sparse connections. This step is critical. If the pruned network is used without retraining, accuracy is significantly impacted.
+
+3.1 Regularization
+Choosing the correct regularization impacts the performance of pruning and retraining
+Overall, L2 regularization gives the best pruning results
+
+3.2 Dropout Ratio Adjustment
+Dropout [23] is widely used to prevent over-fitting, and this also applies to retraining. During retraining, however, the dropout ratio must be adjusted to account for the change in model capacity.
+In dropout, each parameter is probabilistically dropped during training, but will come back during
+inference. In pruning, parameters are dropped forever after pruning and have no chance to come back during both training and inference.
+As pruning already reduced model capacity, the retraining dropout ratio should be smaller.
+
+3.3 Local Pruning and Parameter Co-adaptation
+During retraining, it is better to retain the weights from the initial training phase for the connections that survived pruning than it is to re-initialize the pruned layers.
+So when we retrain the pruned layers,
+we should keep the surviving parameters instead of re-initializing them.
+Retraining the pruned layers starting with retained weights requires less computation because we
+don’t have to back propagate through the entire network
+Also, neural networks are prone to suffer
+the vanishing gradient problem [25] as the networks get deeper, which makes pruning errors harder to
+recover for deep networks. To prevent this, we fix the parameters for CONV layers and only retrain
+the FC layers after pruning the FC layers, and vice versa.
+
+3.4 Iterative Pruning
+Learning the right connections is an iterative process.
+
+3.5 Pruning Neurons
+After pruning connections, neurons with zero input connections or zero output connections may be safely pruned.
+A neuron that has zero input connections (or zero output connections) will have no contribution
+to the final loss, leading the gradient to be zero for its output connection (or input connection),respectively.
+Thus, the dead neurons will be automatically removed during retraining.
+
+4. Experiments
+We pruned four representative networks: Lenet-300-100 and Lenet-5 on MNIST, together with AlexNet and VGG-16 on ImageNet.

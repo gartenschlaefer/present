@@ -1,0 +1,10 @@
+------------------------
+han2015
+------------------------
+Hashed Nets:
+Wenlin Chen, James T. Wilson, Stephen Tyree, Kilian Q. Weinberger, and Yixin Chen. 
+Compressing neural networks with the hashing trick
+
+Dropout
+Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan Salakhutdinov. 
+Dropout: A simple way to prevent neural networks from overfitting.
