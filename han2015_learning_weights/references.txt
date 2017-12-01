@@ -1,6 +1,10 @@
 ------------------------
 han2015
 ------------------------
+
+Paper to present:
+Song Han, Jeff Pool, John Tran, William J. Dally. Learning both Weights and Connections for Efficient Neural Networks
+
 Hashed Nets:
 Wenlin Chen, James T. Wilson, Stephen Tyree, Kilian Q. Weinberger, and Yixin Chen. 
 Compressing neural networks with the hashing trick
