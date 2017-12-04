@@ -24,3 +24,12 @@ https://nerdist.com/why-are-googles-neural-networks-making-these-brain-melting-i
 
 regularization:
 https://www.quora.com/What-are-the-main-regularization-methods-used-in-machine-learning
+
+Alex Net:
+http://cv-tricks.com/cnn/understand-resnet-alexnet-vgg-inception/
+
+White shark meme:
+https://thescinder.com/tag/machine-learning/
+
+killing Machine Learning:
+https://www.analyticsvidhya.com/blog/2015/12/hilarious-jokes-videos-statistics-data-science/
