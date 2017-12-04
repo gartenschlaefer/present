@@ -12,3 +12,12 @@ Compressing neural networks with the hashing trick
 Dropout
 Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan Salakhutdinov. 
 Dropout: A simple way to prevent neural networks from overfitting.
+
+inperfect software
+http://coderzen.blogspot.co.at/2015/01/synaptic-pruning-in-artificial-neural.html
+
+creativity:
+http://imagination-engines.com/iei_founder.php
+
+dog knight:
+https://nerdist.com/why-are-googles-neural-networks-making-these-brain-melting-images/
