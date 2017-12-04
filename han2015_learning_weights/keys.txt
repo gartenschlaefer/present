@@ -7,7 +7,8 @@ Song Han is a fifth year PhD student with Prof. Bill Dally at Stanford Universit
 Unlike conventional training, however, we are not
 learning the final values of the weights, but rather we are learning which connections are important.
 
-The second step is to prune the low-weight connections
+The second step is to prune the low-weight connections. All connections with weights below a
+threshold are removed from the network
 
 The final step retrains the network to learn the final weights for the remaining
 sparse connections. This step is critical. If the pruned network is used without retraining, accuracy is significantly impacted.
@@ -44,3 +45,5 @@ Thus, the dead neurons will be automatically removed during retraining.
 
 4. Experiments
 We pruned four representative networks: Lenet-300-100 and Lenet-5 on MNIST, together with AlexNet and VGG-16 on ImageNet.
+
+

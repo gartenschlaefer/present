@@ -21,3 +21,6 @@ http://imagination-engines.com/iei_founder.php
 
 dog knight:
 https://nerdist.com/why-are-googles-neural-networks-making-these-brain-melting-images/
+
+regularization:
+https://www.quora.com/What-are-the-main-regularization-methods-used-in-machine-learning
