@@ -33,3 +33,12 @@ https://thescinder.com/tag/machine-learning/
 
 killing Machine Learning:
 https://www.analyticsvidhya.com/blog/2015/12/hilarious-jokes-videos-statistics-data-science/
+
+Mnist:
+https://qph.ec.quoracdn.net/main-qimg-d01751bdf7dab3d9a5949f226a35b7ba
+
+Imagenet:
+https://machinelearningmastery.com/use-pre-trained-vgg-model-classify-objects-photographs/
+
+TitanX:
+http://assets.nvidia.com/nv/pascal//images/titanx-og-hero.jpg

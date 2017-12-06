@@ -36,6 +36,7 @@ the FC layers after pruning the FC layers, and vice versa.
 
 3.4 Iterative Pruning
 Learning the right connections is an iterative process.
+boost pruning rate from 5× to 9× on AlexNet
 
 3.5 Pruning Neurons
 After pruning connections, neurons with zero input connections or zero output connections may be safely pruned.
