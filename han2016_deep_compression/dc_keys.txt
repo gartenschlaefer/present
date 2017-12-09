@@ -1,0 +1,50 @@
+--
+Deep Compression
+--
+
+
+AlexNet Caffemodel is over 200MB, and the VGG-16 Caffemodel is over 500MB
+
+First, we prune the networking by removing the redundant connections, keeping
+only the most informative connections. Next, the weights are quantized so that multiple connections
+share the same weight, thus only the codebook (effective weights) and the indices need to be stored.
+Finally, we apply Huffman coding to take advantage of the biased distribution of effective weights.
+
+Our main insight is that, pruning and trained quantization are able to compress the network without
+interfering each other, thus lead to surprisingly high compression rate.
+
+We store the sparse structure that results from pruning using compressed sparse row (CSR) or
+compressed sparse column (CSC) format
+
+To compress further, we store the index difference instead of the absolute position, and encode this
+difference in 8 bits for conv layer and 5 bits for fc layer.
+
+When we need an index difference larger
+than the bound, we the zero padding solution, we add a filler zero
+
+For pruned AlexNet, we are able to quantize to 8-bits (256 shared weights) for each
+CONV layers, and 5-bits (32 shared weights) for each FC layer without any loss of accuracy.
+
+Weights are not shared across layers.
+,our method determines weight sharing after a network is
+fully trained, so that the shared weights approximate the original network.
+
+Centroid initialization impacts the quality of clustering and thus affects the network’s prediction
+accuracy.
+
+Larger weights play a more important role than smaller weights (Han et al., 2015), but there are fewer
+of these large weights. Thus for both Forgy initialization and density-based initialization, very few
+centroids have large absolute value which results in poor representation of these few large weights.
+Linear initialization does not suffer from this problem. The experiment section compares the accuracy
+of different initialization methods after clustering and fine-tuning, showing that linear initialization
+works best.
+
+Feed-Forward and Backpropagation:
+An index into the shared weight table is stored for each connection.
+last fc-layer in AlexNet
+
+Huffman:
+Both distributions are biased: most of the quantized weights are
+distributed around the two peaks; the sparse matrix index difference are rarely above 20. Experiments
+show that Huffman coding these non-uniformly distributed values saves 20% − 30% of network
+storage.

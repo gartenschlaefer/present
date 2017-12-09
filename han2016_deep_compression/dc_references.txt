@@ -1,0 +1,26 @@
+
+Paper:
+Song Han, Huizi Mao, William J. Dally. Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding
+
+Pruning Paper:
+Song Han, Jeff Pool, John Tran, William J. Dally. Learning both Weights and Connections for Efficient Neural Networks
+
+
+MagicBook:
+https://i.pinimg.com/736x/37/b1/2a/37b12abf7f3f9bdf72c29cb49a58aa13--magic-book.jpg
+
+MagicBook2:
+http://library.vicu.utoronto.ca/friends/blog/wp-content/uploads/2016/01/magic-book-740x360.jpg
+
+SpongeBob:
+https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1422176678i/13467151.jpg
+
+Huffman Coding:
+http://www.techiedelight.com/huffman-coding/
+
+csr:
+http://slideplayer.com/slide/9793914/31/images/6/
+
+AlexNet:
+http://cv-tricks.com/cnn/understand-resnet-alexnet-vgg-inception/
+
