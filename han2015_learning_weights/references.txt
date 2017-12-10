@@ -69,3 +69,6 @@ http://assets.nvidia.com/nv/pascal//images/titanx-og-hero.jpg
 
 SuccessKid:
 https://www.theverge.com/2015/11/11/9711698/microsoft-project-oxford-emotion-recognition
+
+HansPresent:
+https://web.stanford.edu/class/ee380/Abstracts/160106-slides.pdf

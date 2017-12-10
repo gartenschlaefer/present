@@ -48,3 +48,22 @@ Both distributions are biased: most of the quantized weights are
 distributed around the two peaks; the sparse matrix index difference are rarely above 20. Experiments
 show that Huffman coding these non-uniformly distributed values saves 20% − 30% of network
 storage.
+
+Exp:
+Quantization and weight 
+sharing are implemented by maintaining a codebook structure that stores the shared weight, and
+group-by-index after calculating the gradient of each layer. Each shared weight is updated with all
+the gradients that fall into that bucket. Huffman coding doesn’t require training and is implemented
+offline after all the fine-tuning is finished.
+
+Models:
+Lenet-300-100 (2-fc layers, with 300 and 100 neurons) 
+Lenet-5 (2-conv and 2-fc layers)
+Dataset: 
+MNIST (28x28 pixel numbers)
+
+Models:
+AlexNet (5-conv and  3-fc layers) 
+VGG-16 (13-conv and 3-fc layers) 
+Dataset: 
+ImageNet ILSVRC-2012 (12.5M training, 50k validation of photos)

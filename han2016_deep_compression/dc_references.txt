@@ -24,3 +24,6 @@ http://slideplayer.com/slide/9793914/31/images/6/
 AlexNet:
 http://cv-tricks.com/cnn/understand-resnet-alexnet-vgg-inception/
 
+HansPresent:
+https://web.stanford.edu/class/ee380/Abstracts/160106-slides.pdf
+
