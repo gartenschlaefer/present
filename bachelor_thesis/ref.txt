@@ -1,0 +1,28 @@
+
+Google Audioset:
+https://research.google.com/audioset/
+
+Tensorflow:
+https://upload.wikimedia.org/wikipedia/commons/a/a4/TensorFlowLogo.png
+
+Python:
+https://www.raspberrypi.org/documentation/usage/python/
+
+YouTube8M:
+https://research.google.com/youtube8m/
+
+Joanna Harp:
+https://www.youtube.com/watch?v=BBfh0v1KH2Y
+https://youtu.be/BBfh0v1KH2Y
+
+Kingfish:
+https://youtu.be/AA0N8XMqx9s
+
+Lion:
+https://youtu.be/BB3CCG8SD54
+
+Train:
+https://youtu.be/CCX_4cW_SAU
+
+Speaker Symbol:
+http://freevector.co/vector-icons/interface/speaker-audio-interface-symbol.html
