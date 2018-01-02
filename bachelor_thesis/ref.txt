@@ -26,3 +26,13 @@ https://youtu.be/CCX_4cW_SAU
 
 Speaker Symbol:
 http://freevector.co/vector-icons/interface/speaker-audio-interface-symbol.html
+
+Neural Network bio. model:
+http://cs231n.github.io/neural-networks-1/
+
+Gradient Problem:
+Y. Bengio, P. Simard, and P. Frasconi, “Learning long-term dependencies with gradient
+descent is difficult,” Trans. Neur. Netw., vol. 5, no. 2, pp. 157–166, Mar. 1994. [Online].
+Available: http://dx.doi.org/10.1109/72.279181
+
+Long Short-Term Memory Unit (LSTM Unit)
