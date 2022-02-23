@@ -1,0 +1,19 @@
+% --
+% outer theme for chriworld
+
+\mode<presentation>
+
+% frame title
+\defbeamertemplate*{frametitle}{chriworld}[1][]
+{
+  \vskip 0.5cm
+  \begin{beamercolorbox}[wd=\paperwidth, ht=1cm]{frametitle}
+    \begin{tikzpicture}
+      \useasboundingbox[fill=white] (0, 0) rectangle (\the\paperwidth, 1);
+      \fill[sublgray] (0, 0) rectangle (\the\paperwidth, 1);
+      \node[anchor=west, white, font=\large] at (1, 0.4){\insertframetitle};
+    \end{tikzpicture}
+  \end{beamercolorbox}
+}
+
+\mode<all>

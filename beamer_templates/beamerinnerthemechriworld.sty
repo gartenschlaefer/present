@@ -1,0 +1,76 @@
+% --
+% inner theme of chriworld
+
+\mode<presentation>
+
+% usual page style
+\setbeamertemplate{background}
+{
+  \begin{tikzpicture}
+
+    % general background setting
+    \useasboundingbox (0, 0) rectangle (\the\paperwidth, \the\paperheight);
+    
+    % not the title page
+    \ifnum \thepage > 1 \relax
+      \fill [white, opacity=1.0] (0, 0) rectangle (\the\paperwidth, \the\paperheight);
+    \else 
+      \fill [color=sublgray] (0, 0) rectangle (\the\paperwidth, \the\paperheight);
+    \fi
+  \end{tikzpicture}
+}
+
+
+% title page
+\defbeamertemplate*{title page}{chriworld}[1][]
+{ 
+  % title
+  \vskip 2cm
+  \begin{beamercolorbox}[wd=12cm, leftskip=2cm, sep=8pt, #1]{title page header}
+    \centering
+    \Large
+    \usebeamerfont{title}\inserttitle\par
+  \end{beamercolorbox}
+
+  % author
+  \vskip 1cm
+  \begin{beamercolorbox}[wd=12cm, leftskip=2cm, sep=8pt, #1]{author}
+    \centering
+    \usebeamerfont{author}\insertauthor\par
+  \end{beamercolorbox}
+
+  % date
+  \vskip 2cm
+  \begin{beamercolorbox}[wd=12cm, leftskip=2cm, sep=8pt, #1]{date}
+    \centering
+    \footnotesize
+    \usebeamerfont{author}\insertdate\par
+  \end{beamercolorbox}
+  \vfill
+}
+
+
+
+% usual page style
+\newcommand{\lastframe}
+{{
+  \setbeamertemplate{background}
+  {
+    \begin{tikzpicture}
+      \useasboundingbox (0, 0) rectangle (\the\paperwidth, \the\paperheight);
+      \fill [color=sublgray] (0, 0) rectangle (\the\paperwidth, \the\paperheight);
+    \end{tikzpicture}
+  }
+
+  \begin{frame}
+    \usebeamerfont{title}
+    \usebeamercolor[fg]{title page header}
+    \centering
+    Thank you for your Attention.\\
+    \vskip 1cm
+    I am looking forward to work with you.
+  \end{frame}
+}}
+
+
+\mode<all>
